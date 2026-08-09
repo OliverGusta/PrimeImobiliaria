@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Imóveis - Catálogo Completo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      Prime <span>Imóveis</span>
+    </a>
+    <nav class="menu-navegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="imoveis.html">Imóveis</a></li>
+        <li><a href="anunciar.html">Anunciar Imóvel</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FILTRO DE BUSCA -->
+  <section class="filtro-imoveis">
+    <h2>Catálogo de Imóveis</h2>
+    <form class="barra-filtro">
+      <label for="filtro-cidade">Cidade:</label>
+      <select id="filtro-cidade" name="cidade">
+        <option value="">Todas as cidades</option>
+        <option value="sp">São Paulo - SP</option>
+        <option value="rj">Rio de Janeiro - RJ</option>
+        <option value="ba">Cruz das Almas - BA</option>
+      </select>
+
+      <label for="filtro-tipo">Tipo:</label>
+      <select id="filtro-tipo" name="tipo">
+        <option value="">Todos os tipos</option>
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+      </select>
+    </form>
+  </section>
+
+  <!-- GRADE COMPLETA DE IMÓVEIS -->
+  
+
+	
+  <section class="destaques">
+  
+  <!-- BARRA DE FILTROS COM JAVASCRIPT -->
+    <div style="text-align: center; margin: 20px 0 30px 0;">
+      <button onclick="filtrarImoveis('todos')" class="botao-principal" style="margin: 5px; cursor: pointer;">
+        Todos os Imóveis
+      </button>
+      <button onclick="filtrarImoveis('venda')" class="botao-principal" style="margin: 5px; cursor: pointer; background-color: #27ae60;">
+        Apenas Venda
+      </button>
+      <button onclick="filtrarImoveis('aluguel')" class="botao-principal" style="margin: 5px; cursor: pointer; background-color: #e67e22;">
+        Apenas Aluguel
+      </button>
+    </div>
+    <div class="grade-imoveis">
+      <!-- Imóvel 1 -->
+	  <div class = "filtro-imoveis">
+      <article class="card-imovel">
+        <div class="imagem-container">
+          <img src="imagem/casa em condominio.jpg" alt="Casa em Condomínio">
+          <span class="badge badge-venda">Venda</span>
+        </div>
+        <div class="info-imovel">
+          <h3>Casa em Condomínio</h3>
+          <p class="preco">R$ 850.000</p>
+          <p class="endereco">Jardim das Rosas - Lote 12</p>
+          <div class="detalhes">
+            <span>3 Quartos</span> • <span>2 Vagas</span> • <span>180m²</span>
+          </div>
+          <a href="detalhe.html" class="botao-principal">Ver Detalhes</a>
+        </div>
+		</div>
+      </article>
+
+      <!-- Imóvel 2 -->
+	  <div class = "filtro-imoveis">
+      <article class="card-imovel">
+        <div class="imagem-container">
+          <img src="imagem/apcentro2.webp" alt="Apartamento no Centro">
+          <span class="badge badge-aluguel">Aluguel</span>
+        </div>
+        <div class="info-imovel">
+          <h3>Apartamento Centro</h3>
+          <p class="preco">R$ 2.500 /mês</p>
+          <p class="endereco">Av. Principal, 500 - Apto 402</p>
+          <div class="detalhes">
+            <span>2 Quartos</span> • <span>1 Vaga</span> • <span>75m²</span>
+          </div>
+          <a href="detalhe3.html" class="botao-principal">Ver Detalhes</a>
+        </div>
+		</div>
+      </article>
+     
+	
+	
+	<!-- IMOVEL 3 -->
+	<div class = "filtro-imoveis">
+	<article class = "card-imovel">
+	<div class= "imagem-container">
+	<img src="imagem/frente casa CDA.png" alt="Casa na entrada da cidade">
+	<span class = "badge badge-aluguel"> Aluguel </span>
+	</div>
+	<div class = "info-imovel">
+	<h3> Casa na entrada da ciadade </h3>
+	<p class = "preco"> R$ 1.200 /mês </p>
+	<p class = "endereco"> Rua Antonio L Conceição, N 38 </p>
+	<div class = "detalhes">
+	<span> 2 Quartos </span> • <span> 2 Vagas </span> • <span> 120m² </span>
+	</div>
+	<a href = "detalhe2.html" class = "botao-principal"> Ver Detalhes </a>
+	</div>
+	</article>
+	</div>
+	</div>
+	</div>
+	
+	<script src="script.js"></script>
+	</body>
+  </section>
+ 
+  
+<footer class="rodape-site">
+  <div class="rodape-conteudo">
+    <div class="rodape-logo">
+      Prime <span>Imóveis</span>
+    </div>
+    <p>&copy; 2026 Prime Imóveis. Todos os direitos reservados.</p>
+    <div class="rodape-links">
+      <a href="index.html">Início</a> | 
+      <a href="imoveis.html">Imóveis</a> | 
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

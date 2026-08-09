@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Imóveis - Detalhes do Imóvel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      Prime <span>Imóveis</span>
+    </a>
+    <nav class="menu-navegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="imoveis.html">Imóveis</a></li>
+        <li><a href="anunciar.html">Anunciar Imóvel</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="destaques">
+    <article class="imovel-detalhado">
+      
+      <!-- Título e Endereço no topo -->
+      <h1>Casa em Condomínio Fechado. Disponível para venda <span class="badge badge-venda"> Venda </span></h1>
+      <p class="endereco">Jardim das Rosas - Lote 12</p>
+      
+      <!-- CAIXA MÃE: Divide em 2 colunas lado a lado (Esquerda: Foto/Texto | Direita: Mapa) -->
+      <div class="conteudo-detalhes">
+        
+        <!-- COLUNA 1: FOTO E DETALHES -->
+        <div class="coluna-info">
+         <!-- ================= INÍCIO DO CARROSSEL ================= -->
+          <div class="carrossel-imovel">
+            
+            <!-- CONTENDEOR DAS IMAGENS -->
+            <div class="slides-container">
+              <!-- Foto 1 (Começa visível: class="slide ativo") -->
+              <img class="slide ativo" src="imagem/primeimobiliariacasa.png" alt="Fachada da Casa">
+              
+              <!-- Foto 2 -->
+              <img class="slide" src="imagem/interior casa1.png" alt="Sala de Estar">
+              
+              <!-- Foto 3 (Você pode adicionar quantas quiser seguindo esse modelo!) -->
+              <img class="slide" src="imagem/interior 2 casa 1.png" alt="Área Gourmet">
+			  
+			  <!-- Foto 4 -->
+			  <img class= "slide" src="imagem/interior casa 1.png">
+            </div>
+ 
+            <!-- SETAS DE NAVEGAÇÃO -->
+            <button class="seta-carrossel seta-esq" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="seta-carrossel seta-dir" onclick="mudarSlide(1)">&#10095;</button>
+
+            <!-- BOLINHAS INDICADORAS -->
+            <div class="indicadores-carrossel">
+              <span class="ponto ativo" onclick="irParaSlide(0)"></span>
+              <span class="ponto" onclick="irParaSlide(1)"></span>
+              <span class="ponto" onclick="irParaSlide(2)"></span>
+			  <span class="ponto" onclick="irParaSlide(3)"></span>
+            </div>
+
+          </div>
+          <!-- ================= FIM DO CARROSSEL ================= -->
+
+          <section class="sobre-imovel">
+            <h2>Valor: <span class="destaque">R$ 850.000</span></h2>
+            <div class="detalhes">
+              <span><strong>Área:</strong> 180m²</span> | 
+              <span><strong>Quartos:</strong> 3</span> | 
+              <span><strong>Banheiros:</strong> 2</span> | 
+              <span><strong>Vagas:</strong> 2</span>
+            </div>
+            <br>
+            <p>Excelente residência com fino acabamento, churrasqueira, segurança 24 horas e ampla área de lazer privada.</p>
+            <p>Além de ótimo espaço para reformas.</p>
+            <br>
+            
+            <!-- Botão Corrigido: Apenas a tag <a> normal -->
+            <a href="proposta.html" class="botao-principal">Enviar Proposta / Reserva</a>
+          </section>
+        </div>
+
+        <!-- COLUNA 2: MAPA -->
+        <section class="mapa-imovel">
+          <h3>Localização do Imóvel</h3>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119025.37549005804!2d-47.87604308430729!3d-21.210306544860813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b927a71f859d%3A0xd0c0ace1533d28c7!2sResidencial%20Verona!5e0!3m2!1spt-BR!2sbr!4v1785629489087!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+		  
+		  <div class="foto-extra" style="margin-top: 25px;">
+            <h3>Ambientes Internos</h3>
+            <img 
+              src="imagem/interior casa 1.webp"
+              alt="Foto do interior do imóvel" 
+              style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); display: block;">
+          </div>
+          <!-- =============================================== -->
+
+ 
+        </section>
+
+      </div> <!-- Fim da div conteudo-detalhes -->
+
+    </article>
+  </main>
+  
+  <!-- RODAPÉ DO SITE -->
+  <footer class="rodape-site">
+    <div class="rodape-conteudo">
+      <div class="rodape-logo">
+        Prime <span>Imóveis</span>
+      </div>
+      <p>&copy; 2026 Prime Imóveis. Todos os direitos reservados.</p>
+      <div class="rodape-links">
+        <a href="index.html">Início</a> | 
+        <a href="imoveis.html">Imóveis</a> | 
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
