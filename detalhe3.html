@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Imóveis - Apartamento no Centro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      Prime <span>Imóveis</span>
+    </a>
+    <nav class="menu-navegacao">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="imoveis.html">Imóveis</a></li>
+        <li><a href="anunciar.html">Anunciar Imóvel</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="destaques">
+    <article class="imovel-detalhado">
+      
+      <!-- TÍTULO E ENDEREÇO -->
+      <h1>Apartamento no Centro Disponível para <span class="badge badge-aluguel">Aluguel</span></h1>
+      <p class="endereco">Rua Antonio Carlos Nº246</p>
+      
+      <!-- INÍCIO DO GRID LADO A LADO (2 Colunas) -->
+      <div class="conteudo-detalhes">
+        
+        <!-- COLUNA DA ESQUERDA: Foto + Informações e Botão -->
+        <div class="coluna-info">
+          
+          <!-- ================= INÍCIO DO CARROSSEL ================= -->
+          <div class="carrossel-imovel">
+            
+            <!-- CONTENDEOR DAS IMAGENS -->
+            <div class="slides-container">
+              <!-- Foto 1 (Começa visível: class="slide ativo") -->
+              <img class="slide ativo" src="C:\Users\user\Documents\Prime Imobiliária\imagens\apcentro2.webp" alt="Sala do Apartamento">
+              
+              <!-- Foto 2 -->
+              <img class="slide" src="C:\Users\user\Documents\Prime Imobiliária\imagens\casa apt.png" alt="Quarto ou Cozinha">
+              
+			  <!-- Foto 3 -->
+			  <img class="slide" src= "C:\Users\user\Documents\Prime Imobiliária\imagens\ap no centro.jpg">
+			  
+			  <!-- Foto 4 -->
+			  <img class="slide" src= "C:\Users\user\Documents\Prime Imobiliária\imagens\interior casa X.png">
+              <!-- DICA: Se quiser mais fotos, basta colar mais linhas de <img class="slide"...> aqui! -->
+            </div>
+
+            <!-- SETAS DE NAVEGAÇÃO -->
+            <button class="seta-carrossel seta-esq" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="seta-carrossel seta-dir" onclick="mudarSlide(1)">&#10095;</button>
+
+            <!-- BOLINHAS INDICADORAS -->
+            <div class="indicadores-carrossel">
+              <span class="ponto ativo" onclick="irParaSlide(0)"></span>
+              <span class="ponto" onclick="irParaSlide(1)"></span>
+			  <span class="ponto" onclick="irParaSlide(2)"></span>
+			  <span class="ponto" onclick="irParaSlide(3)"></span>
+            </div>
+
+          </div>
+          <!-- ================= FIM DO CARROSSEL ================= -->
+          
+          <section class="sobre-imovel">
+            <h2>Valor: <span class="destaque">R$ 2.500/mês</span></h2>
+            <div class="detalhes">
+              <span><strong>Área:</strong> 75m²</span> | 
+              <span><strong>Quartos:</strong> 2</span> | 
+              <span><strong>Banheiros:</strong> 2</span> | 
+              <span><strong>Vagas:</strong> 1</span>
+            </div>
+            <br>
+            <p>Apartamento de qualidade, construído há poucos anos, apenas um dono.</p>
+            <p>Contém espaço suficiente para até 3 pessoas.</p>
+            <br>
+            <a href="proposta.html" class="botao-principal">Enviar Proposta / Reserva</a>
+          </section>
+        </div>
+
+        <!-- COLUNA DA DIREITA: Mapa -->
+        <section class="mapa-imovel">
+          <h3>Localização do Imóvel</h3>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!4v1785709092261!6m8!1m7!1sySv8Wl4Edgl5a5nl7SYh4g!2m2!1d-23.55703424497927!2d-46.65736470652916!3f257.10638460774294!4f43.050981910606765!5f0.7820865974627469" 
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+          
+          <div class="foto-extra" style="margin-top: 25px;">
+            <h3>Ambientes Internos</h3>
+            <img 
+              src="C:\Users\user\Documents\Prime Imobiliária\imagens\interiores csa2.png"
+              alt="Foto do interior do imóvel" 
+              style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); display: block;">
+          </div>
+        </section>
+
+      </div> <!-- FIM DA DIV .conteudo-detalhes -->
+
+    </article>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape-site">
+    <div class="rodape-conteudo">
+      <div class="rodape-logo">
+        Prime <span>Imóveis</span>
+      </div>
+      <p>&copy; 2026 Prime Imóveis. Todos os direitos reservados.</p>
+      <div class="rodape-links">
+        <a href="index.html">Início</a> | 
+        <a href="imoveis.html">Imóveis</a> | 
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
